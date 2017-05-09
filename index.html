@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consultar endereços por CEP</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    </head>
+    <body> 
+        <div class="center">
+            <div class="row">
+                <h4>Consultar endereços por CEP</h4>
+                <div class="input-field col s3 inputCenter" >
+                    <input value="20930450" type="text" class="validate" id="inputValue">
+                    <label for="CEP">CEP</label>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="search">Buscar</a>
+                </div>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <div class="row">      
+                        <div id="loading"></div>
+                        <p class="cep"> </p>
+                        <p class="logradouro"></p>
+                        <p class="bairro"></p>  
+                        <p class="cidade"></p>
+                        <p class="estado"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green">OK</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

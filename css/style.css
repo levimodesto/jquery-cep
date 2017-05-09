@@ -1,0 +1,17 @@
+.row{
+    padding: 25px;
+}
+.center{
+    padding: 70px 0;
+    text-align: center;
+}
+.inputCenter{
+    float: none !important;
+    margin: 0 auto !important;
+}
+h4{
+    margin-bottom: 30px;
+}
+.modal-content{
+     text-align: center;
+}
